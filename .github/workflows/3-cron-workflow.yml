@@ -1,0 +1,15 @@
+name: Manual Workflow
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # run every 5 minutes
+
+jobs:
+  manual-workflow:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Manual step
+        run: | 
+          echo "Hellow, World"
+          echo "Hellow, World 2"
