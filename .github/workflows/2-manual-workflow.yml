@@ -1,0 +1,14 @@
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-workflow:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Manual step
+        run: | 
+          echo "Hellow, Manual"
+          echo "Hellow, Manual 2"
