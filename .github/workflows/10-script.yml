@@ -1,0 +1,23 @@
+name: Script Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  script-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Setup Node.js environment'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.0.0
+      
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Script Workflow
+        run: |
+          echo "Hello, Script Workflow!"
+
+      - name: Run Python Script
+        run: node sabbir.js
