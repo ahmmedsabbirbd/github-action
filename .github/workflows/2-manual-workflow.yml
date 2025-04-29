@@ -1,0 +1,14 @@
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first-workflow:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: First step
+        run: | 
+          echo "Hellow, World"
+          echo "Hellow, World 2"
